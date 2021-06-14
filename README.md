@@ -1,59 +1,60 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">David Harris - Milestone Project 3</h1>
 
-Welcome USER_NAME,
+The focus of this project is to design and build a back-end database application using Python and MongoDB that will allow users of a website to view, modify and delete items in a database via a front-end website. This will show full interaction of the data for the user from the front-end & the back-end. The database and application will be focused on all aspects of CRUD.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+As the focus of this project will be the data, database & CRUD for the data from the back-end to the front end. I will spend the focus of this time on the design of the database, python interactions and will spend less time focusing on the front end. I have chosen to use HTML, CSS, Flask, Jinja, Google Materialize. I plan to implement the templating feature of Jinja along with a base template from Google Materialize to allow the front-end website to be fully interactive and have a standard template & design to ensure consistency throughout all pages of the site.
 
-## Gitpod Reminders
+The content of the website will be a recipe website about cocktails, both alcoholic and non-alcoholic.
+- The website will be a store of all recipes that users have created. All visitors to the website will be able to view the recipes, they will not need a user account to view.
+- The website will have user authentication and privileges. What I mean by this is that only the creator of the recipe will be able to delete or modify their own created recipes, but all users and non-users will be able to view the recipes.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX)
 
-`python3 -m http.server`
+### User stories
 
-A blue button should appear to click: _Make Public_,
+#### First Time Visitor Goals
+- As a first-time visitor I want to easily understand the main purpose of the website.
+- As a first-time visitor I want to be able to view and browse the recipes instantly without a barrier to entry.
 
-Another blue button should appear to click: _Open Browser_.
+ #### Returning Visitor Goals
+- As a returning visitor I want to be able to create my own personal user account for the website.
+- As a returning visitor I want to be able to create and upload my own personal recipes for the website.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### Frequent Visitor Goals
+- As a frequent visitor I want to be able to access my previous recipes and modify them with changes, ensuring that the changes are saved back to the website.
+- As a frequent visitor I want to be able to access my previous recipes and delete them if I wish.
 
-A blue button should appear to click: _Make Public_,
+### Design
 
-Another blue button should appear to click: _Open Browser_.
+#### Colour Scheme
+As I will be focused on the Python3 & MongoDB side of this project, I have decided to focus my time spent on the back-end database/Python3 logic. To reduce time spent on the front-end design, I am going to use a pre-built template from the “Google Materialize” website. I will pick one that is neutral and fits to a broad audience. The aim here is to allow the data to be easy to view, digest and understand for the users.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Typography
+The font that I have chosen is for this website is “Nunito” via “Google Fonts”. I have chosen to use this font as it is a nice balance of “easy to read”, “casual” & “professional”.
 
-To log into the Heroku toolbelt CLI:
+#### Wireframes
+Please use the links below to download my wireframe designs in PDF format.
+- [Desktop View Wireframe](assets/wireframes/wireframe-desktop-view.pdf)
+- [Mobile View Wireframe](assets/wireframes/wireframe-mobile-view.pdf)
+- [Tablet View Wireframe](assets/wireframes/wireframe-tablet-view.pdf)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Technologies Used
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+### Languages Used
+- [HTML:](https://en.wikipedia.org/wiki/HTML) This project uses HTML for the basic structure of the data.
+- [CSS:](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) This project uses CSS for applying custom styles to the HTML.
+- [Python3:](https://en.wikipedia.org/wiki/Python_(programming_language)) This project uses Python3 as the core logic and functionality of the application. The full data interaction with the MongoDB will be built and testing using Python3.
 
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+### Frameworks, Libraries & Programs Used
+- [Git:](https://git-scm.com/) Git was used for version control by utilizing the GitPod terminal to commit to Git and Push to GitHub.
+- [GitHub:](https://github.com/) GitHub is used to store the projects code after being pushed from Git.
+- [Favicon:](https://favicon.io/favicon-generator/) I will generate a custom favicon image from this website for my project.
+- [Font Awesome:](https://fontawesome.com/) I will be using Font Awesome custom icons for the site. I plan to use the social media icons for the footer of the website.
+- [Google Fonts:](https://fonts.google.com/) Google Fonts were used to import the "Gloria Hallelujah" font into the style.CSS file which is used on all pages throughout the project.
+- [Google Materialize:](https://en.wikipedia.org/wiki/Material_Design) Google Materialize will be used to take a temple of the front end-design. I will be using pre-built features as a base for a template and will make some customisations where required.
+- [Flask:](https://en.wikipedia.org/wiki/Flask_(web_framework)) I will be used in conjunction with Python3 to allow additional functionality for my webapp. I am planning on using “Flask Flash” to display messages to users.
+- [Jinja:](https://en.wikipedia.org/wiki/Jinja_(template_engine)) I will be using Jinja primarily for its templating and logic to automatically generate front-end layouts, depending on back-end content of the website.
+- [Werkzeug:](https://en.wikipedia.org/wiki/Flask_(web_framework)#Werkzeug) I will be using Werkzeug to enable secure user authentication. This will be used to store the login details for the user accounts in a secure hash file.
+- [MongoDB:](https://en.wikipedia.org/wiki/MongoDB) I will be using MongoDB as the database software. I have chosen this software as this is a NoSQL based database system. I have chosen this as I do not require a relational database structure for this project.
+- [Heroku:](https://en.wikipedia.org/wiki/Heroku) I will be using Heroku to deploy my project, this is due to needing to deploy a back-end enabled application.
+- [Balsamiq:](https://balsamiq.com/) Balsamiq was used to create the wireframes during the design process.
