@@ -25,27 +25,27 @@
         <!-- full screen navbar -->
         <nav class="nav-extended text-shadow deep-purple lighten-1">
             <div class="nav-wrapper">
-                <a href="{{ url_for('get_home_page') }}" class="brand-logo">DIY Cocktails</a>
+                <a href="{{ url_for('home_page') }}" class="brand-logo">DIY Cocktails</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('get_home_page') }}">Home</a></li>
-                    <li><a href="{{ url_for('get_alcoholic_cocktails') }}">Alcoholic Cocktails</a></li>
-                    <li><a href="{{ url_for('get_non_alcoholic_cocktails') }}">Non Alcoholic Cocktails</a></li>
-                    <li><a href="#">Log In</a></li>
-                    <li><a href="#">Log Out</a></li>
-                    <li><a href="#">Register</a></li>
+                    <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                    <li><a href="{{ url_for('alcoholic_cocktails') }}">Alcoholic Cocktails</a></li>
+                    <li><a href="{{ url_for('non_alcoholic_cocktails') }}">Non Alcoholic Cocktails</a></li>
+                    <li><a href="{{ url_for('login') }}">Log In</a></li>
+                    <li><a href="{{ url_for('logout') }}">Log In</a></li>
+                    <li><a href="{{ url_for('register_user') }}">Register</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- mobile screen navbar -->
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="{{ url_for('get_home_page') }}">Home</a></li>
-            <li><a href="{{ url_for('get_alcoholic_cocktails') }}">Alcoholic Cocktails</a></li>
-            <li><a href="{{ url_for('get_non_alcoholic_cocktails') }}">Non Alcoholic Cocktails</a></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Log Out</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="{{ url_for('home_page') }}">Home</a></li>
+            <li><a href="{{ url_for('alcoholic_cocktails') }}">Alcoholic Cocktails</a></li>
+            <li><a href="{{ url_for('non_alcoholic_cocktails') }}">Non Alcoholic Cocktails</a></li>
+            <li><a href="{{ url_for('login') }}">Log In</a></li>
+            <li><a href="{{ url_for('logout') }}">Log In</a></li>
+            <li><a href="{{ url_for('register_user') }}">Register</a></li>
         </ul>
     </header>
 
