@@ -1,4 +1,7 @@
 body {
-    background-color: green;
-    color: red;
+    font-family: 'Nunito', sans-serif;
+}
+
+.text-shadow {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }

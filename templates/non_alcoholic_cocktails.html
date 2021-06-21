@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>DIY Non-Alcoholic Cocktails</h1>
+
+{% for non_non_alcoholic_cocktail in non_non_alcoholic_cocktails %}
+{{ non_alcoholic_cocktail.test_non_alcoholic_cocktails }}
+{% endfor %}
+
+{% endblock %}
