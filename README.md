@@ -34,9 +34,9 @@ The font that I have chosen is for this website is “Nunito” via “Google Fo
 
 #### Wireframes
 Please use the links below to download my wireframe designs in PDF format.
-- [Desktop View Wireframe](assets/wireframes/wireframe-desktop-view.pdf)
-- [Mobile View Wireframe](assets/wireframes/wireframe-mobile-view.pdf)
-- [Tablet View Wireframe](assets/wireframes/wireframe-tablet-view.pdf)
+- [Desktop View Wireframe](wireframes/wireframe-desktop-view.pdf)
+- [Mobile View Wireframe](wireframes/wireframe-mobile-view.pdf)
+- [Tablet View Wireframe](wireframes/wireframe-tablet-view.pdf)
 
 ## Technologies Used
 

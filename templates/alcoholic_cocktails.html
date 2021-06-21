@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alcoholic Cocktails</title>
-</head>
-<body>
-    {% for alcoholic_cocktail in alcoholic_cocktails %}
-        {{ alcoholic_cocktail.cocktail_name }}<br><br>
-        {{ alcoholic_cocktail.ingredients }}<br><br>
-        {{ alcoholic_cocktail.glass }}<br><br>
-        {{ alcoholic_cocktail.preparation }}<br><br>
-    {% endfor %}
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Testing template inheritance (alcoholic_coctails.html)</h1>
+
+{% for alcoholic_cocktail in alcoholic_cocktails %}
+{{ alcoholic_cocktail.cocktail_name }}<br><br>
+{{ alcoholic_cocktail.ingredients }}<br><br>
+{{ alcoholic_cocktail.glass }}<br><br>
+{{ alcoholic_cocktail.preparation }}<br><br>
+{% endfor %}
+
+{% endblock %}
