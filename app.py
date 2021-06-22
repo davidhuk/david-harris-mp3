@@ -45,11 +45,6 @@ def login():
     return render_template("login.html")
 
 
-@app.route("/logout")
-def logout():
-    return render_template("logout.html")
-
-
 @app.route("/register_user", methods=["GET", "POST"])
 def register_user():
     if request.method == "POST":
@@ -69,6 +64,11 @@ def register_user():
         }
         mongo.db.users.insert_one(register)
     return render_template("register_user.html")
+
+
+@app.route("/user_profile")
+def user_profile():
+    return render_template("user_profile.html")
 
 
 if __name__ == "__main__":
