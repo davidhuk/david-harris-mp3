@@ -1,13 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>DIY Alcoholic Cocktails</h1>
+<h1 class="center-align">DIY Alcoholic Cocktails</h1>
 
 {% for alcoholic_cocktail in alcoholic_cocktails %}
-{{ alcoholic_cocktail.cocktail_name }}<br><br>
-{{ alcoholic_cocktail.ingredients }}<br><br>
-{{ alcoholic_cocktail.glass }}<br><br>
-{{ alcoholic_cocktail.preparation }}<br><br>
+<div class="row">
+    <div class="col s12 m8 offset-m2">
+        <div class="card text-shadow deep-purple lighten-1 center-align">
+            <div class="card-content white-text">
+                <span class="card-title center-align">Name: {{ alcoholic_cocktail.cocktail_name }}</span>
+                <p class="center-align">Glass: {{ alcoholic_cocktail.glass }}</p>
+                <p class="center-align">Ingredients: {{ alcoholic_cocktail.ingredients }}</p>
+                <p class="center-align">Preparation Instruction: {{ alcoholic_cocktail.preparation }}</p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endfor %}
 
 {% endblock %}

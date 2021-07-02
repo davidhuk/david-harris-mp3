@@ -54,7 +54,7 @@ def register_user():
 
         # creates flash error for user notification
         if existing_user:
-            flash("ERROR - Username already registered in system.")
+            flash("ERROR: Username already in use.")
             return redirect(url_for("register_user"))
 
         # posts user data to the database
@@ -73,5 +73,4 @@ def user_profile():
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP")),
-    port = int(os.environ.get("PORT")),
-    debug = True
+    port = int(os.environ.get("PORT"))
