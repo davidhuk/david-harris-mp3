@@ -58,3 +58,14 @@ Please use the links below to download my wireframe designs in PDF format.
 - [MongoDB:](https://en.wikipedia.org/wiki/MongoDB) I will be using MongoDB as the database software. I have chosen this software as this is a NoSQL based database system. I have chosen this as I do not require a relational database structure for this project.
 - [Heroku:](https://en.wikipedia.org/wiki/Heroku) I will be using Heroku to deploy my project, this is due to needing to deploy a back-end enabled application.
 - [Balsamiq:](https://balsamiq.com/) Balsamiq was used to create the wireframes during the design process.
+
+## Credits
+
+### Favicon
+- Favicon.ico was created by me via this free website - https://favicon.io/favicon-generator/ Terms of use located here - https://favicon.io/terms-of-use/
+
+### Font
+- Nunito font taken directly via Google Fonts - https://fonts.google.com/specimen/Nunito Licence details located here - https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+### Google Materialize
+- All CSS layout, design, colours was taken directly from Google Materialize's site - https://materializecss.com/.
