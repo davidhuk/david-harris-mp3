@@ -1,7 +1,5 @@
-body {
-    font-family: 'Nunito', sans-serif;
-}
+body {font-family: 'Nunito', sans-serif;}
 
-.text-shadow {
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-}
+.text-shadow {text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);}
+
+.btn-large:hover {filter: brightness(250%);}
