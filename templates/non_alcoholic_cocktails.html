@@ -4,7 +4,7 @@
 <h1 class="center-align">DIY Non-Alcoholic Cocktails</h1>
 
 <div class="card-action center-align">
-    <a href="#" class="waves-effect waves-light btn-large text-shadow white-text grey darken-4 center-align hoverable">Add a new non-cocktail to the list</a>
+    <a href="{{ url_for('add_non_alcoholic_cocktails') }}" class="waves-effect waves-light btn-large text-shadow white-text grey darken-4 center-align hoverable">Add a new non-cocktail to the list</a>
 </div>
 
 {% for non_alcoholic_cocktail in non_alcoholic_cocktails %}

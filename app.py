@@ -79,10 +79,26 @@ def add_alcoholic_cocktails():
             "preparation": request.form.get("preparation")
         }
         mongo.db.alcoholic_cocktails.insert_one(alcoholic_cocktails)
-        flash("Alcoholic cocktail successfully added to the website database.")
+        flash("Alcoholic cocktail successfully added to the database.")
         return redirect(url_for("alcoholic_cocktails"))
 
     return render_template("add_alcoholic_cocktails.html")
+
+
+@app.route("/add_non_alcoholic_cocktails", methods=["GET", "POST"])
+def add_non_alcoholic_cocktails():
+    if request.method == "POST":
+        non_alcoholic_cocktails = {
+            "cocktail_name": request.form.get("cocktail_name"),
+            "ingredients": request.form.get("ingredients"),
+            "glass": request.form.get("glass"),
+            "preparation": request.form.get("preparation")
+        }
+        mongo.db.non_alcoholic_cocktails.insert_one(non_alcoholic_cocktails)
+        flash("Non-Alcoholic cocktail successfully added to the database.")
+        return redirect(url_for("non_alcoholic_cocktails"))
+
+    return render_template("add_non_alcoholic_cocktails.html")
 
 
 if __name__ == '__main__':
