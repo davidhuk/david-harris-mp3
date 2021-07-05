@@ -69,6 +69,22 @@ def user_profile():
     return render_template("user_profile.html")
 
 
+@app.route("/add_alcoholic_cocktails", methods=["GET", "POST"])
+def add_alcoholic_cocktails():
+    if request.method == "POST":
+        alcoholic_cocktails = {
+            "cocktail_name": request.form.get("cocktail_name"),
+            "ingredients": request.form.get("ingredients"),
+            "glass": request.form.get("glass"),
+            "preparation": request.form.get("preparation")
+        }
+        mongo.db.alcoholic_cocktails.insert_one(alcoholic_cocktails)
+        flash("Alcoholic cocktail successfully added to the website database.")
+        return redirect(url_for("alcoholic_cocktails"))
+
+    return render_template("add_alcoholic_cocktails.html")
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')))

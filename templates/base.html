@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static', filename='favicon/favicon-16x16.png') }}">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -24,7 +27,6 @@
 </head>
 
 <body>
-
     <header>
         <!-- full screen navbar -->
         <nav class="nav-extended text-shadow deep-purple lighten-1">
@@ -42,7 +44,6 @@
                 </ul>
             </div>
         </nav>
-
         <!-- mobile screen navbar -->
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home_page') }}">Home</a></li>
@@ -50,8 +51,8 @@
             <li><a href="{{ url_for('non_alcoholic_cocktails') }}">Non Alcoholic Cocktails</a></li>
             <li><a href="{{ url_for('login') }}">Log In</a></li>
             <li><a href="#">Log Out</a></li>
-            <li><a href="{{ url_for('register_user') }}">Register</a></li>
-            <li><a href="{{ url_for('user_profile') }}">User Profile</a></li>
+            <li><a href="{{ url_for('register_user') }}">Create Account</a></li>
+            <li><a href="{{ url_for('user_profile') }}">User Account Page</a></li>
         </ul>
     </header>
 
